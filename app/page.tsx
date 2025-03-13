@@ -8,7 +8,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <Navbar/>
       <Hero/>
       <VideoExtend/>

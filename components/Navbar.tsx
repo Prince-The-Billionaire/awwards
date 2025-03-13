@@ -7,7 +7,7 @@ import { general } from './Fonts'
 const Navbar = () => {
     const links = ['NEXUS','VAULT','PROLOGUE','ABOUT','CONTACT']
   return (
-    <div className={`${general.className} fixed p-10 flex flex-row justify-between w-screen bg-transparent z-20 text-white text-4xl`}>
+    <div className={`${general.className} fixed p-10 max-lg:p-1 flex flex-row justify-between w-screen bg-transparent z-20 text-white text-4xl`}>
         <div className='flex flex-row gap-5'>
             <button className='button p-2 px-8 bg-white'>
                 <p className='text-xs '>PRODUCTS</p>
@@ -19,11 +19,11 @@ const Navbar = () => {
                     className='rotate-[135deg] -mt-1 '
                 />
             </button>
-            <button className='button p-2 px-8 bg-white'>
+            <button className='button max-lg:p-0 max-lg:px-2 p-2 px-8 bg-white'>
                 <p className='text-xs'>WHITEPAPER</p>
             </button>
         </div>
-        <div className='flex flex-row gap-4'>
+        <div className='flex flex-row gap-4 max-lg:hidden'>
             {links.map((item,index) => (
                 <NavLink name={item} key={index} index={index}/>
             ))}

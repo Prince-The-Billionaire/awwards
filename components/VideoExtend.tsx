@@ -54,9 +54,9 @@ const VideoExtend = () => {
     })
   }, []);
   return (
-    <div className='flex flex-col justify-center pt-20 items-center'>
-        <p className={`${circularWeb.className} text-sm`}>Welcome to awwards</p>
-        <h1 ref={textRef} className={`${zentryRegular.className} text-8xl -z-10 text-center`}>
+    <div className='flex flex-col justify-center pt-20 max-lg:pt-0 items-center'>
+        <p className={`${circularWeb.className} text-sm max-md:text-xs`}>Welcome to awwards</p>
+        <h1 ref={textRef} className={`${zentryRegular.className} text-8xl max-lg:text-4xl max-md:text-xl -z-10 text-center`}>
             DISCOVER THE WORLD LARGEST <br/> SHARED ADVENTURE
         </h1>
         <img ref={imageRef} className='object-cover w-[500px] h-[400px] block rounded-2xl z-20' src='/img/about.webp' />

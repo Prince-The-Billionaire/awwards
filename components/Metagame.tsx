@@ -56,7 +56,7 @@ const Metagame = () => {
         })
     }
   return (
-    <div className={`${circularWeb.className} flex flex-col  w-screen relative bg-black p-60`}>
+    <div className={`${circularWeb.className} flex flex-col  w-screen relative bg-black p-60 max-lg:p-4`}>
         <h1 className='text-white text-xl'>Into the Metagame</h1>
         <p className='text-white/50 text-base'>
         Immerse yourself in a rich and ever-expanding universe <br/>
@@ -64,11 +64,11 @@ const Metagame = () => {
          interconnected overlay experience on your world.
         </p>
         <div ref={divref} onMouseMove={(e) => playVideo(e,divref,videoref)} onMouseLeave={() => endmove(divref)} >
-            <video id='videotest' ref={videoref} width={'100%'} className='mt-10 w-[70vw] border-gray-500/50 rounded-lg border ' muted >
+            <video id='videotest' ref={videoref} width={'100%'} className='mt-10 max-lg:w-[90vw] w-[70vw] border-gray-500/50 rounded-lg border ' muted >
                 <source src='/videos/feature-1.mp4'/>
             </video>
         </div>
-        <div className='grid grid-rows-2 mt-6 grid-cols-2 h-fit gap-5'>
+        <div className='max-lg:flex-col max-lg:flex max-lg:gap-2 grid grid-rows-2 mt-6 grid-cols-2 h-fit gap-5'>
             <div className='row-span-2 h-fit col-span-1' ref={div1ref} onMouseMove={(e) => playVideo(e,div1ref,video1ref)} onMouseLeave={() => endmove(div1ref)}>
                 <video ref={video1ref} width={'100%'} className='border-gray-500/50 rounded-lg border ' muted >
                     <source src='/videos/feature-2.mp4'/>

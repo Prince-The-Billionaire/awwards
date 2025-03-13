@@ -76,5 +76,9 @@ body{
 }
 
 .button{
-  @apply  hover:cursor-pointer w-fit flex p-2 transition ease-in-out duration-300 hover:skew-12 hover:rounded-sm hover:rotate-y-[-40deg] rounded-xl gap-2  text-black 
+  @apply  hover:cursor-pointer max-lg:rounded w-fit flex p-2 max-lg:p-1 max-lg:py-1 transition ease-in-out duration-300 hover:skew-12 hover:rounded-sm hover:rotate-y-[-40deg] rounded-xl gap-2  text-black 
+}
+
+.text{
+  @apply max-md:text-xs text-base
 }
