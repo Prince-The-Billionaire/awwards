@@ -6,7 +6,7 @@ const CTA = () => {
     <div className='p-10'>
         <div className='rounded-2xl min-h-fit bg-black flex flex-col gap-5 py-10 max-md:py-2 items-center relative overflow-clip '>
             <p className='text-center z-5 text-xs text-white'>join zentry</p>
-            <h1 className={`${zentryRegular.className} z-10 max-md:text-3xl text-8xl text-white text-center`}>LET'S BUILD THE <br/> NEW ERA OF <br/> GAMING TOGETHER</h1>
+            <h1 className={`${zentryRegular.className} z-10 max-md:text-3xl text-8xl text-white text-center`}>LET&apos;S BUILD THE <br/> NEW ERA OF <br/> GAMING TOGETHER</h1>
             <button className='bg-white z-30 text-black rounded-2xl max-md:mb-2 mb-10 px-4 p-2'>
                 CONTACT US
             </button>

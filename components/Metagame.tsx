@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef } from 'react'
-import { circularWeb, general, zentryRegular } from './Fonts'
+import { circularWeb,  zentryRegular } from './Fonts'
 import gsap from 'gsap'
 import Image from 'next/image'
 

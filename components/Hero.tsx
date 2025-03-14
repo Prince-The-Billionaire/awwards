@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 import { general, zentryRegular } from './Fonts'
 import gsap from 'gsap'
@@ -13,7 +13,6 @@ import gsap from 'gsap'
 
 const Hero = () => {
     const videodivref = useRef(null)
-    const [videoBox, setvideoBox] = useState(false)
     const [videoNumber, setVideoNumber] = useState(1)
     const videoRef = useRef<HTMLVideoElement>(null)
     const video1Ref = useRef<HTMLVideoElement>(null)
